@@ -1,0 +1,27 @@
+[package]
+name = "valtoria"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bincode = "1.3"
+cached = "0.27"
+chrono = "0.4"
+criterion = "0.5.1"
+curve25519-dalek = "3.0"
+env_logger = "0.10"
+jsonrpc-core = "16.0"
+jsonrpc-http-server = "16.0"
+log = "0.4"
+rand = "0.8"
+rocksdb = "0.20"
+sha2 = "0.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tempfile = "3.13.0"
+tokio = { version = "1", features = ["full"] }
+warp = "0.3"
+
+[dev-dependencies]
+arbitrary = "1.0"    # For generating random input data
+fuzzcheck = "0.4"     # For fuzz testing
